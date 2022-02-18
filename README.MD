@@ -6,7 +6,7 @@
 It is my online resume and include my job history, education, contact and relevant skills.
 
 
-##### Main page with a picture from Montreal, that it is my dream city.
+##### Main page with a picture from Montreal, that is my dream city.
 ![](assets/images/readme/ini_screen.png)
 
 
