@@ -1,12 +1,27 @@
 -----------------------
 # README
 -----------------------
-Browny is a one page bootstrap 3 based resume/portfolio template.
+# My resume
+
+It is my online resume and include my job history, education, contact and relevant skills.
 
 
+##### Main page with a picture from Montreal, that it is my dream city.
+![](assets/images/readme/ini_screen.png)
+
+
+# Access - My Resume
+
+It is possible to access my online resume through the link bellow:
+
+Website - https://vivialves.github.io
+
+-----------------------
 Template Info:
 -----------------------
-Name: 		Browny - Free Bootstrap One Page Portfolio Resume Tempalte
+Browny is a one page bootstrap 3 based resume/portfolio template.
+
+Name: 		Browny - Free Bootstrap One Page Portfolio Resume Template
 Version: 	1.0
 Author: 	ThemeSINE
 Website: 	https://www.themesine.com/
