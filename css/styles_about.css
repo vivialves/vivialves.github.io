@@ -1,0 +1,128 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background: #fdfdfd;
+  color: #333;
+}
+
+header {
+  background: #1e1e2f;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+nav a {
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+nav a.active {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.about-container {
+  padding: 2rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+.intro {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.profile-img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.btn {
+  display: inline-block;
+  background: #0077b6;
+  color: #fff;
+  padding: 0.7rem 1.2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.timeline-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin: 40px 0;
+}
+
+.timeline-column {
+  padding: 10px;
+}
+
+.timeline {
+  position: relative;
+  padding-left: 30px;
+  border-left: 2px solid #ddd;
+}
+
+.timeline-item {
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.timeline-date {
+  font-weight: bold;
+  color: #0077b6;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -20px; /* adjust if ball size changes */
+  top: 10px;
+  width: 12px;
+  height: 12px;
+  background-color: #007bff;
+  border-radius: 50%;
+}
+
+/* ✅ Responsive: stack columns on small screens */
+@media (max-width: 768px) {
+  .timeline-section {
+    grid-template-columns: 1fr;
+  }
+}
+
+.achievements ul {
+  list-style: none;
+  padding: 0;
+}
+
+.achievements li {
+  background: #f0f0f0;
+  margin: 0.5rem 0;
+  padding: 0.7rem;
+  border-radius: 6px;
+}
+
+
+.languages {
+  margin-top: 2rem;
+  font-weight: bold;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #1e1e2f;
+  color: #fff;
+  margin-top: 2rem;
+}

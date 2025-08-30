@@ -1,0 +1,96 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background: #fdfdfd;
+  color: #333;
+}
+
+header {
+  background: #1e1e2f;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+nav a {
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+nav a.active {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+
+/* Skills Page */
+.skills-page {
+  padding: 60px 20px;
+  background: #f9f9f9;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.4em;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.underline {
+  width: 80px;
+  height: 4px;
+  background: #0077b6;
+  margin: 0 auto 40px auto;
+  border-radius: 2px;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 25px;
+  text-align: center;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+}
+
+.card .icon {
+  font-size: 40px;
+  color: #0077b6;
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  font-size: 1.4em;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.card p {
+  font-size: 1em;
+  color: #555;
+  line-height: 1.6;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #1e1e2f;
+  color: #fff;
+  margin-top: 2rem;
+}
