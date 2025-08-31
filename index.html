@@ -10,7 +10,7 @@
 <body>
   <!-- Header -->
   <header class="header">
-    <div class="logo">Viviane</div>
+    <div class="logo">Welcome! / Bienvenue!</div>
     <nav class="nav">
       <a href="index.html" class="active">Home</a>
       <a href="about.html">About</a>
@@ -34,7 +34,19 @@
       <a href="https://www.linkedin.com/in/vivialves-developer" target="_blank">LinkedIn</a>
       <a href="https://www.fiverr.com/vivi_alves_24/" target="_blank">Fiverr</a>
     </div>
-    
+  </section>
+
+    <!-- GitHub Section -->
+  <section class="github-section">
+    <h3>My GitHub Stats</h3>
+    ------------------------
+    <p>Check out my projects, top languages, and recent activity 🚀</p>
+    <div class="github-cards">
+      <img class="github-stats" src="https://github-readme-stats.vercel.app/api?username=vivialves&show_icons=true&theme=react" alt="GitHub Stats" />
+      <img class="github-langs" src="https://github-readme-stats.vercel.app/api/top-langs/?username=vivialves&layout=compact&theme=react" alt="Top Languages" />
+    </div>
+    <h3>Recently Updated Repos</h3>
+    <ul id="github-repos"></ul>
   </section>
 
   <!-- Projects -->
@@ -42,16 +54,19 @@
     <h2>Featured Projects</h2>
     <div class="grid">
       <div class="card">
-        <h3>📊 Market Analysis Agent</h3>
-        <p>A LangChain + scraping agent for e-commerce insights.</p>
+        <h3>🔊 Sound Recognition</h3>
+        <p>Detects fire alarms, door knocks, and security alarms in real time.</p>
+        <button onclick="openProject('sound')">See More</button>
       </div>
       <div class="card">
-        <h3>🩻 Breast Cancer Classifier</h3>
-        <p>AI model for medical image classification with Grad-CAM heatmaps.</p>
+        <h3>🩻 Breast Cancer Classifier - Version 2</h3>
+        <p>AI model for medical image classification with Grad-CAM heatmaps using Pytorch.</p>
+        <button onclick="openProject('breast-cancer')">See More</button>
       </div>
       <div class="card">
-        <h3>📦 Inventory Control</h3>
-        <p>Flask + PySpark app for real-time stock monitoring.</p>
+        <h3>📱 Meal Planner App</h3>
+        <p>Mobile app with LLM integration for recipes & grocery lists.</p>
+        <button onclick="openProject('meal')">See More</button>
       </div>
     </div>
   </section>
