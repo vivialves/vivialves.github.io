@@ -29,8 +29,8 @@ This website presents my **portfolio, services, and contact information** in a m
 ---
 
 ## 📂 Project Structure
-
-portfolio-website/
+```bash
+.vivialves.github.io
 │
 ├── index.html # Home page
 ├── about.html # About me
@@ -38,13 +38,20 @@ portfolio-website/
 ├── portfolio.html # Projects and portfolio
 ├── services.html # Services I offer
 ├── contact.html # Contact form
+├── mystore.html # My Store Page
 ├── css/
 │ └── styles_portfolio.css
-│ └── styles_services.css
+│ └── styles_service.css
+│ └── styles_about.css
+│ └── styles_contact.css
+│ └── styles_index.css
+│ └── styles_mystore.css
+│ └── styles_skills.css
 ├── js/
 │ └── script.js # Interactive menu & portfolio filter
 └── assets/ # Images, icons, favicon
-
+├── README.md
+```
 
 ---
 
@@ -72,6 +79,10 @@ portfolio-website/
 - Portfolio: [https://vivialves.github.io/](https://vivialves.github.io/)  
 - Fiverr: [https://www.fiverr.com/vivi_alves_24/](https://www.fiverr.com/vivi_alves_24/)  
 - LinkedIn: [https://www.linkedin.com/in/vivialves-developer](https://www.linkedin.com/in/vivialves-developer)  
+---
+
+## ✨ Host
+ - I use Cloudinary to host my images and vimeo to host videos.
 
 ---
 
@@ -95,13 +106,12 @@ git clone https://github.com/vivialves/vivialves.github.io
 cd portfolio-website
 
 # Open index.html in browser
+```
+---
 
 🚀 Author
 
 Viviane Alves de Oliveira – Python Developer | AI & Web Dev
- | LinkedIn
- | Fiverr
-
 
 ---
 
