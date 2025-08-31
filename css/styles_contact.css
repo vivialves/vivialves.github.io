@@ -24,3 +24,113 @@ nav a.active {
   font-weight: bold;
   text-decoration: underline;
 }
+
+/* ===== CONTACT SECTION ===== */
+.contact {
+  padding: 60px 20px;
+  background: #f9f9f9;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  color: #0077cc;
+}
+
+.contact .subtitle {
+  font-size: 1.1em;
+  color: #666;
+  margin-bottom: 40px;
+}
+
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start; /* Align top */
+  gap: 40px;
+  max-width: 900px; /* Limit total width */
+  margin: 0 auto; /* Center container horizontally */
+}
+
+.contact-links {
+  flex: 1 1 350px;
+  min-width: 250px;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 1.1em;
+  align-items: center;
+}
+
+.contact-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: #0077cc;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.contact-links a:hover {
+  color: #005fa3;
+  transform: translateX(5px);
+}
+
+.contact-form {
+  flex: 1 1 350px;
+  min-width: 300px;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1em;
+  transition: border 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #0077cc;
+  outline: none;
+}
+
+.contact-form button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  background: #0077cc;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.contact-form button:hover {
+  background: #005fa3;
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #1e1e2f;
+  color: #fff;
+  margin-top: 2rem;
+}

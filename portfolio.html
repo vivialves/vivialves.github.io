@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Vivi-Developer-Portfolio</title>
   <link rel="shortcut icon" href="assets/fl-icon.jpg">
-  <link rel="stylesheet" href="css/styles_skills.css">
+  <link rel="stylesheet" href="css/styles_portfolio.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
@@ -20,4 +20,87 @@
         <a href="contact.html">Contact</a>
         <a href="mystore.html">My Store</a>
     </nav>
+    <button id="menu-toggle" class="menu-toggle"></button>
   </header>
+
+  <!-- ===== PORTFOLIO SECTION ===== -->
+  <section class="portfolio" id="portfolio">
+    <h2>Portfolio</h2>
+    <p class="subtitle">Here’s a selection of my projects in AI, data science, and web development — showcasing both technical skills and real-world impact.</p>
+    
+    <!-- Filter Buttons -->
+    <div class="filter-buttons">
+      <button class="filter-btn" data-category="all">All</button>
+      <button class="filter-btn" data-category="ai">AI & ML</button>
+      <button class="filter-btn" data-category="django">Web (Django/Flask/FastAPI)</button>
+      <button class="filter-btn" data-category="fullstack">Full Stack</button>
+      <button class="filter-btn" data-category="other">Other</button>
+    </div>
+
+
+
+    <div class="portfolio-grid">
+  
+      <!-- AI Project -->
+      <div class="portfolio-item ai">
+        <img src="https://res.cloudinary.com/dyxq9qxn6/image/upload/v1756583309/Screenshot_2025-08-30_154655_nrmxsi.png" alt="Breast Cancer AI Model">
+        <div class="content">
+          <h3>Breast Cancer Classification (AI)</h3>
+          <p>Developed deep learning models (DenseNet, EfficientNet, VGG16) for breast cancer diagnosis with Grad-CAM heatmap visualization.</p>
+          <div class="tags">
+            <span>Python</span><span>Keras</span><span>TensorFlow</span><span>Healthcare AI</span>
+          </div>
+          <a href="https://github.com/vivialves/breast_cancer_cnn" target="_blank">View Project</a>
+        </div>
+      </div>
+  
+      <!-- Project 2 -->
+      <div class="portfolio-item ai">
+        <img src="https://res.cloudinary.com/dyxq9qxn6/image/upload/v1756583586/Screenshot_2025-08-30_155249_v9lyad.png" alt="3D Medical Imaging">
+        <div class="content">
+          <h3>3D Medical Imaging with LIDC</h3>
+          <p>Created preprocessing and training pipelines for 3D CNNs using MONAI and PyTorch, improving classification of lung cancer from DICOM scans.</p>
+          <div class="tags">
+            <span>PyTorch</span><span>MONAI</span><span>3D CNN</span><span>DICOM</span>
+          </div>
+          <a href="https://github.com/vivialves/lidc_ml" target="_blank">View Project</a>
+        </div>
+      </div>
+  
+      <!-- Project 3 -->
+      <div class="portfolio-item django">
+        <img src="images/market-agent.jpg" alt="Market Analysis Agent">
+        <div class="content">
+          <h3>Market Analysis Agent</h3>
+          <p>Built a multi-agent system for e-commerce using LLMs, sentiment analysis, scraping, and trend detection with LangChain orchestration.</p>
+          <div class="tags">
+            <span>Python</span><span>LangChain</span><span>LLMs</span><span>Data Pipeline</span>
+          </div>
+          <a href="https://github.com/yourusername/market-analysis-agent" target="_blank">View Project</a>
+        </div>
+      </div>
+  
+      <!-- Project 4 -->
+      <div class="portfolio-item fullstack">
+        <img src="images/inventory-app.jpg" alt="Inventory Monitoring App">
+        <div class="content">
+          <h3>Inventory Monitoring App</h3>
+          <p>Developed a Flask backend + jQuery frontend for real-time inventory monitoring, integrated with Databricks and PySpark pipelines.</p>
+          <div class="tags">
+            <span>Flask</span><span>jQuery</span><span>PySpark</span><span>Databricks</span>
+          </div>
+          <a href="https://github.com/yourusername/inventory-monitor" target="_blank">View Project</a>
+        </div>
+      </div>
+  
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Viviane. Built with ❤️ and using HTML, CSS & JS.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+
+</body>
+</html>
