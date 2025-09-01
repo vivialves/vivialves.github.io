@@ -69,3 +69,44 @@ document.addEventListener("DOMContentLoaded", () => {
   document.querySelector('.filter-btn[data-category="all"]').classList.add("active-btn");
 });
 
+// 👉 Store page filter (without "all")
+document.addEventListener("DOMContentLoaded", () => {
+  const storeFilterButtons = document.querySelectorAll(".store-filter-btn");
+  const storeItems = document.querySelectorAll(".store-item");
+
+  storeFilterButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      // Remove highlight from all buttons
+      storeFilterButtons.forEach((btn) => btn.classList.remove("active-btn"));
+
+      // Highlight clicked button
+      button.classList.add("active-btn");
+
+      const category = button.getAttribute("data-filter");
+
+      // Show/hide store items
+      storeItems.forEach((item) => {
+        if (item.classList.contains(category)) {
+          item.style.display = "block";
+        } else {
+          item.style.display = "none";
+        }
+      });
+    });
+  });
+
+  // 👉 Default: highlight the first filter button
+  if (storeFilterButtons.length > 0) {
+    storeFilterButtons[0].classList.add("active-btn");
+    const firstCategory = storeFilterButtons[0].getAttribute("data-category");
+
+    storeItems.forEach((item) => {
+      if (item.classList.contains(firstCategory)) {
+        item.style.display = "block";
+      } else {
+        item.style.display = "none";
+      }
+    });
+  }
+});
+

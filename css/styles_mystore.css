@@ -25,6 +25,181 @@ nav a.active {
   text-decoration: underline;
 }
 
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: #fdfdfd;
+  color: #444;
+}
+
+.store-filters {
+  margin-bottom: 20px;
+}
+
+.store-filter-btn {
+  background: #f4f4f4;
+  border: 1px solid #ddd;
+  padding: 0.6rem 1.2rem;
+  margin: 0 0.3rem;
+  cursor: pointer;
+  border-radius: 25px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.store-filter-btn.active,
+.store-filter-btn:hover {
+  background: #ffb6c1;
+  color: white;
+  border-color: #ffb6c1;
+}
+
+.store-filter-btn.active-btn {
+  background: #e5b6d8;
+  color: #fff;
+}
+
+.store-item {
+  border: 1px solid #eee;
+  padding: 16px;
+  text-align: center;
+  border-radius: 6px;
+  background: #fafafa;
+}
+
+.photo-delicate {
+  padding: 60px 20px;
+  background: linear-gradient(to bottom right, #fff7f9, #fdfdfd);
+  text-align: center;
+}
+
+.photo-delicate .title {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #c97b9b;
+  font-weight: bold;
+}
+
+.photo-delicate .subtitle {
+  font-size: 1.1rem;
+  margin-bottom: 40px;
+  color: #666;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.card h3 {
+  font-size: 1.2rem;
+  margin: 15px 0 5px;
+  color: #c97b9b;
+}
+
+.card p {
+  font-size: 0.95rem;
+  color: #555;
+  padding: 0 15px 20px;
+}
+
+.store-link .btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background: #c97b9b;
+  color: #fff;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.store-link .btn:hover {
+  background: #b56788;
+}
+
+.store-item {
+  display: none; /* hidden by default */
+  border: 1px solid #eee;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  background: #fff;
+}
+
+.store-item img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 0.8rem;
+}
+
+/* Skills & Vision */
+.skills-vision {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.skills, .vision {
+  flex: 1 1 45%;
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+}
+
+.skills h3, .vision h3 {
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.skills ul {
+  list-style: none;
+  padding: 0;
+}
+
+.skills ul li {
+  margin-bottom: 10px;
+  padding-left: 18px;
+  position: relative;
+  color: #555;
+}
+
+.skills ul li::before {
+  content: "🌸";
+  position: absolute;
+  left: 0;
+}
+
+.vision p {
+  color: #555;
+  line-height: 1.6;
+}
 
 footer {
   text-align: center;
