@@ -48,7 +48,7 @@ nav a.active {
 
 .btn {
   display: inline-block;
-  background: #0077b6;
+  background: #db709d;
   color: #fff;
   padding: 0.7rem 1.2rem;
   border-radius: 8px;
@@ -80,7 +80,7 @@ nav a.active {
 
 .timeline-date {
   font-weight: bold;
-  color: #0077b6;
+  color: #db709d;
 }
 
 .timeline-item::before {
@@ -90,7 +90,7 @@ nav a.active {
   top: 10px;
   width: 12px;
   height: 12px;
-  background-color: #007bff;
+  background-color: #c97b9b;
   border-radius: 50%;
 }
 

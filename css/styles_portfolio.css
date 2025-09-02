@@ -80,7 +80,7 @@ nav a.active {
 .portfolio-item h3 {
   margin: 0 0 10px;
   font-size: 1.3em;
-  color: #0077cc;
+  color: #f24a90;
 }
 
 .portfolio-item p {
@@ -92,13 +92,13 @@ nav a.active {
   display: inline-block;
   margin-top: 10px;
   text-decoration: none;
-  color: #0077cc;
+  color: #f24a90;
   font-weight: bold;
   transition: color 0.3s;
 }
 
 .portfolio-item a:hover {
-  color: #005fa3;
+  color: #c97b9b;
 }
 
 /* Hidden state (for filtering) */
@@ -130,7 +130,7 @@ nav a.active {
 }
 
 .filter-btn.active {
-  background: #6c63ff;
+  background: #eb4d8f;
   color: white;
   transform: scale(1.05);
 }
@@ -149,7 +149,7 @@ nav a.active {
 }
 
 .filter-buttons button.active-btn {
-  background: #007bff; /* blue highlight */
+  background: #ffb6c1; /* blue highlight */
   color: white;
   font-weight: bold;
 }

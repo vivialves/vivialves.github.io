@@ -34,7 +34,7 @@ nav a.active {
 .services-hero h1 {
   font-size: 2.5em;
   margin-bottom: 15px;
-  color: #0077cc;
+  color: #d76594;
 }
 
 .services-hero p {
@@ -66,7 +66,7 @@ nav a.active {
 
 .services-cards .card i {
   font-size: 2.5em;
-  color: #0077cc;
+  color: #c97b9b;
   margin-bottom: 15px;
 }
 
@@ -90,7 +90,7 @@ nav a.active {
 .testimonials h2 {
   font-size: 2em;
   margin-bottom: 40px;
-  color: #0077cc;
+  color: #d76594;
 }
 
 .testimonial-grid {
@@ -119,14 +119,14 @@ nav a.active {
 .testimonial h4 {
   margin-top: 15px;
   font-weight: bold;
-  color: #0077cc;
+  color: #c97b9b;
 }
 
 /* ===== Call-to-Action ===== */
 .cta {
   text-align: center;
   padding: 60px 20px;
-  background: #0077cc;
+  background: #c97b9b;
   color: #fff;
 }
 
@@ -139,7 +139,7 @@ nav a.active {
   display: inline-block;
   padding: 12px 25px;
   background: #fff;
-  color: #0077cc;
+  color: #c97b9b;
   border-radius: 8px;
   text-decoration: none;
   font-weight: bold;
@@ -147,7 +147,7 @@ nav a.active {
 }
 
 .cta .btn:hover {
-  background: #005fa3;
+  background: #c97b9b;
   color: #fff;
 }
 

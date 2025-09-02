@@ -70,7 +70,7 @@ body {
   background: #fff;
   padding: 1.5rem;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 12px rgba(180, 99, 149, 0.764);
   transition: transform 0.2s;
 }
 .card:hover {
@@ -86,7 +86,7 @@ body {
 .github-section h2 {
   font-size: 2em;
   margin-bottom: 10px;
-  color: #0077cc;
+  color: #bf4c88;
 }
 
 .github-section p {
@@ -182,5 +182,5 @@ body {
 }
 
 .social-links a:hover {
-  background: #007bff;
+  background: #ff00d0;
 }

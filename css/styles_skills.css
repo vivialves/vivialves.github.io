@@ -42,7 +42,7 @@ nav a.active {
 .underline {
   width: 80px;
   height: 4px;
-  background: #0077b6;
+  background: #ce6c9f;
   margin: 0 auto 40px auto;
   border-radius: 2px;
 }
@@ -71,7 +71,7 @@ nav a.active {
 
 .card .icon {
   font-size: 40px;
-  color: #0077b6;
+  color: #ce6c9f;
   margin-bottom: 15px;
 }
 
