@@ -3,211 +3,314 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vivi-Developer-Portfolio</title>
+  <title>Viviane Alves | AI Engineer | Portfolio</title>
   <link rel="shortcut icon" href="assets/fl-icon.jpg">
   <link rel="stylesheet" href="css/styles_portfolio.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
 <body>
 
   <!-- Header / Navbar -->
   <header>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="skills.html">Skills</a>
-        <a href="portfolio.html" class="active">Portfolio</a>
-        <a href="service.html">Services</a>
-        <a href="contact.html">Contact</a>
-        <a href="mystore.html">My Store</a>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="skills.html">Skills</a>
+      <a href="portfolio.html" class="active">Portfolio</a>
+      <a href="contact.html">Contact</a>
     </nav>
+
     <button id="menu-toggle" class="menu-toggle"></button>
   </header>
 
   <!-- ===== PORTFOLIO SECTION ===== -->
   <section class="portfolio" id="portfolio">
+
     <h2>Portfolio</h2>
-    <p class="subtitle">Here’s a selection of my projects in AI, data science, and web development — showcasing both technical skills and real-world impact.</p>
-    
+
+    <p class="subtitle">
+      Selected AI engineering projects spanning Generative AI, machine learning,
+      NLP, healthcare AI, and intelligent systems.
+    </p>
+
     <!-- Filter Buttons -->
     <div class="filter-buttons">
       <button class="filter-btn" data-category="all">All</button>
-      <button class="filter-btn" data-category="ai">AI & ML</button>
-      <button class="filter-btn" data-category="backend">Backend & API</button>
-      <button class="filter-btn" data-category="fullstack">Full Stack</button>
-      <button class="filter-btn" data-category="fondproj">Foundations / Early Projects</button>
+      <button class="filter-btn" data-category="genai">Generative AI</button>
+      <button class="filter-btn" data-category="ml">Machine Learning</button>
+      <button class="filter-btn" data-category="nlp">NLP</button>
+      <button class="filter-btn" data-category="healthcare">Healthcare AI</button>
     </div>
 
-
-
     <div class="portfolio-grid">
-  
-      <!-- AI Project -->
-      <div class="portfolio-item ai">
-        <img src="https://res.cloudinary.com/dyxq9qxn6/image/upload/v1756583309/Screenshot_2025-08-30_154655_nrmxsi.png" alt="Breast Cancer AI Model">
+
+      <!-- ========================================================= -->
+      <!-- Project 1 - OpenSport -->
+      <!-- ========================================================= -->
+
+      <div class="portfolio-item genai">
+
         <div class="content">
-          <h3>Breast Cancer Classification (AI)</h3>
-          <p>Developed deep learning models (DenseNet, EfficientNet, VGG16) for breast cancer diagnosis with Grad-CAM heatmap visualization.</p>
+
+          <h3>Production AI Agents & Reasoning Systems</h3>
+
+          <p>
+            Designed and implemented AI agent and reasoning pipelines for a
+            sports intelligence platform, combining LLMs, RAG, tool orchestration,
+            vector search, streaming APIs, and production observability.
+          </p>
+
           <div class="tags">
-            <span>Python</span><span>Keras</span><span>TensorFlow</span><span>Healthcare AI</span>
+            <span>LLMs</span>
+            <span>LangGraph</span>
+            <span>RAG</span>
+            <span>Python</span>
+            <span>GCP</span>
+            <span>BigQuery</span>
+            <span>Langfuse</span>
           </div>
-          <p><a href="https://classbreastcancer.streamlit.app/" target="_blank">Visit Site</a></p>
-          <a href="https://github.com/vivialves/breast_cancer_cnn" target="_blank">Github</a>
+
+          <p>
+            <strong>Professional Experience</strong>
+          </p>
+
         </div>
+
       </div>
-  
-      <!-- Project 2 -->
-      <div class="portfolio-item ai">
-        <img src="https://res.cloudinary.com/dyxq9qxn6/image/upload/v1756583586/Screenshot_2025-08-30_155249_v9lyad.png" alt="3D Medical Imaging">
+
+
+      <!-- ========================================================= -->
+      <!-- Project 2 - Angelina NLP -->
+      <!-- ========================================================= -->
+
+      <div class="portfolio-item nlp">
+
         <div class="content">
+
+          <h3>NLP Sentiment Analysis with BERT</h3>
+
+          <p>
+            Built a Transformer-based NLP pipeline using BERT to analyze large
+            volumes of noisy and unstructured user feedback, addressing slang,
+            spelling errors, class imbalance, sentiment classification, and
+            entity extraction.
+          </p>
+
+          <div class="tags">
+            <span>Python</span>
+            <span>BERT</span>
+            <span>PyTorch</span>
+            <span>Hugging Face</span>
+            <span>NLP</span>
+            <span>NER</span>
+            <span>FastAPI</span>
+            <span>Docker</span>
+          </div>
+
+          <p>
+            <strong>AI Engineer — Contract Project</strong>
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <!-- ========================================================= -->
+      <!-- Project 3 - LIDC -->
+      <!-- ========================================================= -->
+
+      <div class="portfolio-item ml healthcare">
+
+        <img
+          src="https://res.cloudinary.com/dyxq9qxn6/image/upload/v1756583586/Screenshot_2025-08-30_155249_v9lyad.png"
+          alt="3D Medical Imaging with LIDC"
+        >
+
+        <div class="content">
+
           <h3>3D Medical Imaging with LIDC</h3>
-          <p>Created preprocessing and training pipelines for 3D CNNs using MONAI and PyTorch, improving classification of lung cancer from DICOM scans.</p>
+
+          <p>
+            Developed preprocessing and training pipelines for 3D lung cancer
+            classification using DICOM scans, MONAI, and PyTorch. The project
+            achieved 87.5% accuracy and an AUC of 0.91, with Grad-CAM used for
+            model interpretability.
+          </p>
+
           <div class="tags">
-            <span>PyTorch</span><span>MONAI</span><span>3D CNN</span><span>DICOM</span>
+            <span>PyTorch</span>
+            <span>MONAI</span>
+            <span>3D CNN</span>
+            <span>DICOM</span>
+            <span>Grad-CAM</span>
+            <span>Healthcare AI</span>
           </div>
-          <a href="https://github.com/vivialves/lidc_ml" target="_blank">Github</a>
+
+          <a
+            href="https://github.com/vivialves/lidc_ml"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Github
+          </a>
+
         </div>
+
       </div>
-  
-      <!-- Project 3 -->
-      <div class="portfolio-item ai">
-        <img src="https://res.cloudinary.com/dyxq9qxn6/image/upload/v1756619850/Screenshot_2025-08-31_015715_zysivt.png" alt="Market Analysis Agent">
+
+
+      <!-- ========================================================= -->
+      <!-- Project 4 - Audio AI -->
+      <!-- ========================================================= -->
+
+      <div class="portfolio-item ml">
+
+        <img
+          src="https://res.cloudinary.com/dyxq9qxn6/image/upload/v1768847916/TFDemo_tkxttt.png"
+          alt="Audio AI Sound Recognition"
+        >
+
         <div class="content">
+
+          <h3>Audio AI — Environmental Sound Recognition</h3>
+
+          <p>
+            Compared multiple deep learning architectures for environmental
+            sound classification and evaluated deployment constraints for
+            edge inference, ultimately using YAMNet embeddings for a
+            TensorFlow Lite-compatible solution.
+          </p>
+
+          <div class="tags">
+            <span>Python</span>
+            <span>TensorFlow</span>
+            <span>YAMNet</span>
+            <span>Audio AI</span>
+            <span>TFLite</span>
+            <span>Edge AI</span>
+          </div>
+
+          <a
+            href="https://github.com/vivialves/sound_recognition_yamnet"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Github
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <!-- ========================================================= -->
+      <!-- Project 5 - Breast Cancer -->
+      <!-- ========================================================= -->
+
+      <div class="portfolio-item ml healthcare">
+
+        <img
+          src="https://res.cloudinary.com/dyxq9qxn6/image/upload/v1756583309/Screenshot_2025-08-30_154655_nrmxsi.png"
+          alt="Breast Cancer AI Model"
+        >
+
+        <div class="content">
+
+          <h3>Breast Cancer Classification</h3>
+
+          <p>
+            Developed deep learning models including DenseNet, EfficientNet,
+            and VGG16 for breast cancer image classification, with Grad-CAM
+            heatmaps used to improve model interpretability.
+          </p>
+
+          <div class="tags">
+            <span>Python</span>
+            <span>Keras</span>
+            <span>TensorFlow</span>
+            <span>CNN</span>
+            <span>Grad-CAM</span>
+            <span>Healthcare AI</span>
+          </div>
+
+          <p>
+            <a
+              href="https://classbreastcancer.streamlit.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Visit Site
+            </a>
+          </p>
+
+          <a
+            href="https://github.com/vivialves/breast_cancer_cnn"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Github
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <!-- ========================================================= -->
+      <!-- Project 6 - Market Analysis Agent -->
+      <!-- ========================================================= -->
+
+      <div class="portfolio-item genai">
+
+        <img
+          src="https://res.cloudinary.com/dyxq9qxn6/image/upload/v1756619850/Screenshot_2025-08-31_015715_zysivt.png"
+          alt="Market Analysis Agent"
+        >
+
+        <div class="content">
+
           <h3>Market Analysis Agent</h3>
-          <p>Built a multi-agent system for e-commerce using LLMs, sentiment analysis, scraping, and trend detection with LangChain orchestration.</p>
+
+          <p>
+            Built a multi-agent system for e-commerce analysis using LLMs,
+            sentiment analysis, data collection, trend detection, and
+            LangChain-based orchestration.
+          </p>
+
           <div class="tags">
-            <span>Python</span><span>LangChain</span><span>LLMs</span><span>Data Pipeline</span>
+            <span>Python</span>
+            <span>LangChain</span>
+            <span>LLMs</span>
+            <span>AI Agents</span>
+            <span>Data Pipeline</span>
           </div>
-          <a href="https://github.com/vivialves/market-analysis-agent" target="_blank">Github</a>
+
+          <a
+            href="https://github.com/vivialves/market-analysis-agent"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Github
+          </a>
+
         </div>
-      </div>
-  
-      <!-- Project 4 -->
-      <div class="portfolio-item ai">
-        <img src="https://res.cloudinary.com/dyxq9qxn6/image/upload/v1756749843/Screenshot_2025-09-01_140215_p33kgx.png" alt="animal-cnn">
-        <div class="content">
-          <h3>Animal CNN</h3>
-          <p>This repository includes training and evaluation of multiple neural network architectures for animal classification, such as: AlexNet, ShuffleNet, EfficientNet</p>
-          <div class="tags">
-            <span>Python</span><span>Jupyter</span><span>Deep Learning</span><span>CNN</span>
-          </div>
-          <a href="https://github.com/vivialves/animal-cnn" target="_blank">Github</a>
-        </div>
+
       </div>
 
-      <!-- Project 5 -->
-      <div class="portfolio-item fondproj">
-        <img src="https://res.cloudinary.com/dyxq9qxn6/image/upload/v1756751409/Screenshot_2025-09-01_142938_xcr0rw.png" alt="sft_RSA_hashing">
-        <div class="content">
-          <h3>RSA hashing</h3>
-          <p>Secure FIle Transfer with RSA and Hasing in Python</p>
-          <div class="tags">
-            <span>Python</span><span>RSA Hash</span><span>streamlit</span><span>Cybersecurity</span>
-          </div>
-          <p><a href="https://sftrsahashing.streamlit.app/" target="_blank">Visit Site</a></p>
-          <a href="https://github.com/vivialves/sft_RSA_hashing" target="_blank">Github</a>
-        </div>
-      </div>
-
-      <!-- Project 6 -->
-      <div class="portfolio-item ai">
-        <img src="https://res.cloudinary.com/dyxq9qxn6/image/upload/v1768847916/TFDemo_tkxttt.png" alt="sound_recognition_yamnet">
-        <div class="content">
-          <h3>Sound Recognition – Audio Classification (YAMNet - Embeddings)</h3>
-          <p>Real-time environmental sound recognition using deep learning for edge deployment.</p>
-          <div class="tags">
-            <span>Python</span><span>Inference</span><span>Deep Learning</span><span>YAMNet</span>
-          </div>
-          <a href="https://github.com/vivialves/sound_recognition_yamnet" target="_blank">Github</a>
-        </div>
-      </div>
-
-      <!-- Project 7 -->
-      <div class="portfolio-item ai">
-        <img src="https://res.cloudinary.com/dyxq9qxn6/image/upload/v1768847848/spectrogram_klcodq.png" alt="sound_recognition_cnn">
-        <div class="content">
-          <h3>Sound Recognition – Audio Classification (CNN - Spectrogram)</h3>
-          <p>Real-time environmental sound recognition using deep learning for edge deployment.</p>
-          <div class="tags">
-            <span>Python</span><span>Streamlit</span><span>Deep Learning</span><span>CNN</span>
-          </div>
-          <a href="https://github.com/vivialves/sound_recognition_cnn" target="_blank">Github</a>
-        </div>
-      </div>
-
-      <!-- Project 8 -->
-      <div class="portfolio-item backend">
-        <img src="https://res.cloudinary.com/dyxq9qxn6/image/upload/v1768850151/Screenshot_2026-01-19_141534_dxxccd.png" alt="school_api">
-        <div class="content">
-          <h3>School API</h3>
-          <p>A small API with basic data of school</p>
-          <div class="tags">
-            <span>Python</span><span>Django</span><span>REST API</span><span>SQL</span>
-          </div>
-          <a href="https://github.com/vivialves/school_api" target="_blank">Github</a>
-        </div>
-      </div>
-
-      <!-- Project 9 -->
-      <div class="portfolio-item backend">
-        <img src="https://res.cloudinary.com/dyxq9qxn6/image/upload/v1768850151/Screenshot_2026-01-19_141534_dxxccd.png" alt="stock_trade">
-        <div class="content">
-          <h3>Stock Trade</h3>
-          <p>A small API with basic data of school</p>
-          <div class="tags">
-            <span>Python</span><span>Django</span><span>REST API</span><span>SQL</span>
-          </div>
-          <a href="https://github.com/vivialves/stock_trade" target="_blank">Github</a>
-        </div>
-      </div>
-
-      <!-- Project 10 -->
-      <div class="portfolio-item backend">
-        <img src="https://res.cloudinary.com/dyxq9qxn6/image/upload/v1768850151/Screenshot_2026-01-19_141534_dxxccd.png" alt="student_api">
-        <div class="content">
-          <h3>Student API</h3>
-          <p>A small API with basic data of Student</p>
-          <div class="tags">
-            <span>Python</span><span>Django</span><span>REST API</span><span>SQL</span>
-          </div>
-          <a href="https://github.com/vivialves/student_api" target="_blank">Github</a>
-        </div>
-      </div>
-
-      <!-- Project 11 -->
-      <div class="portfolio-item fullstack">
-        <img src="https://res.cloudinary.com/dyxq9qxn6/image/upload/v1768851832/13_ihvems.png" alt="fusion">
-        <div class="content">
-          <h3>Fusion</h3>
-          <p>This repository includes training and evaluation of multiple neural network architectures for animal classification, such as: AlexNet, ShuffleNet, EfficientNet</p>
-          <div class="tags">
-            <span>Python</span><span>Django</span><span>Postgress</span><span></span>
-          </div>
-          <a href="https://github.com/vivialves/fusion" target="_blank">Github</a>
-          <a href="https://vimeo.com/1024946646?share=copy#t=0" title="Fusion" class="lightbox mfp-iframe"></a>
-        </div>
-      </div>
-
-      <!-- Project 12 -->
-      <div class="portfolio-item fullstack">
-        <img src="https://res.cloudinary.com/dyxq9qxn6/image/upload/v1768851843/14_v4dzzv.png" alt="realtime">
-        <div class="content">
-          <h3>Real-Time</h3>
-          <p>This repository includes training and evaluation of multiple neural network architectures for animal classification, such as: AlexNet, ShuffleNet, EfficientNet</p>
-          <div class="tags">
-            <span>Python</span><span>Jupyter</span><span>Deep Learning</span><span>CNN</span>
-          </div>
-          <a href="https://github.com/vivialves/realtime" target="_blank">Github</a>
-          <a href="https://vimeo.com/1024945241?share=copy#t=0" title="Chat with Redis" class="lightbox mfp-iframe"></a>
-        </div>
-      </div>
-  
     </div>
   </section>
 
+
+  <!-- Footer -->
   <footer>
-    <p>© 2026 Viviane Alves de Oliveira. Built with HTML, CSS & JavaScript.</p>
+    <p>
+      © 2026 Viviane Alves de Oliveira.
+      Built with HTML, CSS & JavaScript.
+    </p>
   </footer>
+
 
   <script src="js/script.js"></script>
 
