@@ -3,204 +3,704 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vivi-Developer-About Me</title>
+
+  <title>Viviane Alves | About Me | AI Engineer</title>
+
   <link rel="shortcut icon" href="assets/fl-icon.jpg">
   <link rel="stylesheet" href="css/styles_about.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/4.1.7/css/flag-icons.min.css">
 
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/4.1.7/css/flag-icons.min.css"
+  >
 </head>
+
 <body>
+
   <header>
     <h1>About Me</h1>
-    <nav>
+
+    <nav class="nav">
       <a href="index.html">Home</a>
       <a href="about.html" class="active">About</a>
       <a href="skills.html">Skills</a>
-      <a href="portfolio.html">Portfolio</a>
-      <a href="service.html">Services</a>
+      <a href="portfolio.html">Projects</a>
       <a href="contact.html">Contact</a>
-      <a href="mystore.html">My Store</a>
     </nav>
-    <button id="menu-toggle" class="menu-toggle"></button>
+
+    <button id="menu-toggle" class="menu-toggle" aria-label="Toggle navigation"></button>
   </header>
 
+
   <main class="about-container">
-    <!-- Intro Section -->
+
+    <!-- Introduction -->
     <section class="intro">
-      <img src="assets/profile.jpg" alt="Viviane Photo" class="profile-img">
+
+      <img
+        src="assets/profile.jpg"
+        alt="Viviane Alves"
+        class="profile-img"
+      >
+
       <div>
+
         <h2>Hi, I'm Viviane</h2>
-        <p>I’m an AI Engineer with a strong software engineering background. 
-          I build end-to-end AI systems — from data preprocessing and model training 
-          to deployment and inference — mainly across healthcare, audio, and NLP use cases.</p>
 
-        <p><em>🇫🇷 Je peux communiquer en français aussi.  
-        J’ai réussi l’examen TCF Canada avec de bons résultats.</em></p>
+        <p>
+          I'm an AI Engineer with a strong software engineering background
+          and experience building machine learning and generative AI systems.
+        </p>
 
-        <a href="files/Viviane_Alves_de_Oliveira_Resume_English.pdf" download class="btn">📄 Download CV - English</a>
-        <a href="files/Viviane_Alves_de_Oliveira_Resume_Francais.pdf" download class="btn">📄 Télécharger Résume - Français</a>
+        <p>
+          My work spans the AI engineering lifecycle — from data processing
+          and model development to backend integration, deployment,
+          observability, and production AI applications.
+        </p>
+
+        <p>
+          I particularly enjoy working at the intersection of
+          <strong>AI and software engineering</strong>: turning models,
+          LLMs, and AI capabilities into reliable systems that can be
+          integrated into real products.
+        </p>
+
+        <p>
+          My current focus includes
+          <strong>Generative AI, LLMs, RAG, agentic systems,
+          AI backends, and machine learning</strong>.
+        </p>
+
+        <div class="cv-buttons">
+
+          <a
+            href="files/Viviane_Alves_de_Oliveira_Resume_English.pdf"
+            download
+            class="btn"
+          >
+            📄 Download CV - English
+          </a>
+
+          <a
+            href="files/Viviane_Alves_de_Oliveira_Resume_Francais.pdf"
+            download
+            class="btn"
+          >
+            📄 Télécharger le CV - Français
+          </a>
+
+        </div>
+
       </div>
+
     </section>
 
-    <!-- Timeline -->
+
+    <!-- Professional Experience -->
     <section class="timeline-section">
 
-      <!-- Timeline Professional-->
       <div class="timeline-column">
+
         <h2>Professional Experience</h2>
+
         <div class="timeline">
 
-          <!-- Freelancer -->
-           <div class="timeline-item">
-              <div class="timeline-date">01/2025 – 12/2025</div>
-              <div class="timeline-content">
-                <h3>AI Engineer / Machine Learning Engineer (Freelancer)</h3>
 
-                <p><strong>Lisnen (Toronto, Canada) – Audio / Sound Recognition</strong></p>
-                <ul>
-                  <li>Designed and trained audio classification models with CNNs and pretrained embeddings (YAMNet, PANNs) using TensorFlow/Keras.</li>
-                  <li>Built robust audio preprocessing pipelines with Librosa and Audiomentations, improving generalization in real-world acoustic environments.</li>
-                  <li>Optimized inference pipelines for TensorFlow Lite deployment on edge devices, reducing latency while maintaining accuracy.</li>
-                </ul>
-                <p>🔹 Impact: Enabled real-time sound recognition on resource-constrained devices.</p>
+          <!-- OpenSport -->
+          <div class="timeline-item">
 
-                <p><strong>Revelo (USA) – End-to-End ML Pipeline / Traceability</strong></p>
-                <ul>
-                  <li>Developed ETL, feature engineering, model training, and deployment pipelines for analytics and traceability.</li>
-                  <li>Ensured reproducibility, monitoring, and seamless integration with downstream systems.</li>
-                </ul>
-                <p>🔹 Impact: Delivered production-ready ML workflows supporting reliable analytics and decision-making.</p>
-
-                <p><strong>Angelina (Fiverr, USA) – Sentiment Analysis (NLP)</strong></p>
-                <ul>
-                  <li>Built NLP sentiment analysis models using transformer embeddings (BERT/GPT-style).</li>
-                  <li>Processed noisy and imbalanced text data; delivered production-ready inference pipelines.</li>
-                </ul>
-                <p>🔹 Impact: Provided actionable insights from customer feedback and textual data.</p>
-
-              </div>
-           </div>
-
-           <!-- BrainInnov -->
-            <div class="timeline-item">
-              <div class="timeline-date">05/2025 - 07/2025</div>
-              <div class="timeline-content">
-                <h3>Machine Learning Engineer (Intern) - BrainInnov</h3>
-                <ul>
-                  <li>Built 3D CNN models (DenseNet, ResNet, Attention variants) for medical imaging using PyTorch and Optuna for learning rate optimization.</li>
-                  <li>Developed preprocessing pipelines for 3D DICOM CT scans using SimpleITK and MONAI, with class-aware augmentation.</li>
-                  <li>Enhanced interpretability with Grad-CAM and improved evaluation with F1/precision-recall metrics.</li>
-                </ul>
-                <p>🔹 Impact: Delivered scalable 3D AI pipelines for lung nodule detection supporting clinical research.</p>
-              </div>
+            <div class="timeline-date">
+              03/2026 – 08/2026
             </div>
 
-            <!-- Globant -->
-            <div class="timeline-item">
-              <div class="timeline-date">03/2022 - 07/2023</div>
-              <div class="timeline-content">
-                <h3>Python Developer/Data Engineer - Globant</h3>
-                <ul>
-                  <li>Designed and maintained ETL pipelines with Python, Azure Data Factory, and Jupyter Notebooks.</li>
-                  <li>Managed large-scale data lakes with AWS Glue, Athena, and S3, delivering analytics-ready datasets.</li>
-                  <li>Mentored team members, improved code quality, and streamlined cross-team workflows.</li>
-                </ul>
-                <p>🔹 Impact: Delivered robust and scalable data pipelines supporting enterprise analytics and machine learning workflows.</p>  
-              </div>
+            <div class="timeline-content">
+
+              <h3>
+                Senior AI Software Developer
+              </h3>
+
+              <p>
+                <strong>OpenSport / Playwize — Canada</strong>
+              </p>
+
+              <ul>
+
+                <li>
+                  Built production-oriented AI agents and reasoning workflows
+                  for sports intelligence using LLMs and LangGraph.
+                </li>
+
+                <li>
+                  Designed multi-step agent workflows involving state
+                  management, tool selection, reflection, fallback handling,
+                  and error recovery.
+                </li>
+
+                <li>
+                  Developed RAG workflows using embeddings and vector search
+                  to ground LLM responses in domain-specific information.
+                </li>
+
+                <li>
+                  Integrated multiple LLM providers, including Anthropic,
+                  Google Gemini, and OpenAI, within provider-agnostic AI
+                  workflows.
+                </li>
+
+                <li>
+                  Implemented streaming AI responses through a Node.js
+                  gateway using Server-Sent Events (SSE).
+                </li>
+
+                <li>
+                  Integrated Langfuse for LLM observability, including
+                  tracing, prompt analysis, latency, and cost monitoring.
+                </li>
+
+                <li>
+                  Worked with BigQuery Vector Search and cloud-based AI
+                  infrastructure.
+                </li>
+
+              </ul>
+
+              <p>
+                🔹 <strong>Focus:</strong>
+                Generative AI · Agentic AI · LLMs · RAG · LangGraph ·
+                Vector Search · AI Observability · GCP
+              </p>
+
             </div>
 
-             <!-- Radix -->
-            <div class="timeline-item">
-              <div class="timeline-date">12/2021 - 03/2022</div>
-              <div class="timeline-content">
-                <h3>Full Stack Developer (Python / Flask) - Radix</h3>
-                  <ul>
-                    <li>Built inventory monitoring applications with Python, Flask, jQuery, and Databricks.</li>
-                    <li>Processed large-scale data with PySpark, integrating business rules into transformation pipelines.</li>
-                  </ul>
-                  <p>🔹 Impact: Improved inventory visibility and operational efficiency for retail clients.</p>
-              </div>
+          </div>
+
+
+          <!-- Lisnen -->
+          <div class="timeline-item">
+
+            <div class="timeline-date">
+              09/2025 – 10/2025
             </div>
 
-            <!-- Portal Telemedicine -->
-            <div class="timeline-item">
-              <div class="timeline-date">12/2020 - 12/2021</div>
-              <div class="timeline-content">
-                <h3>AI Backend Developer - Portal Telemedicine</h3>
-                  <ul>
-                    <li>Integrated AI diagnostic outputs into clinical systems using Python, Django, Docker, and Kubernetes microservices.</li>
-                    <li>Developed REST APIs for AI heatmaps and dashboards (Django REST Framework, Vue.js).</li>
-                    <li>Automated data pipelines on GCP (BigQuery, Data Fusion, Cloud Storage, Looker) to improve clinical workflows.</li>
-                  </ul>
-                  <p>🔹 Impact: Delivered production-ready AI backend solutions enabling real-time telemedicine diagnostics.</p>
-              </div>
+            <div class="timeline-content">
+
+              <h3>
+                AI Engineer — Independent Contractor
+              </h3>
+
+              <p>
+                <strong>Lisnen — Toronto, Canada</strong>
+              </p>
+
+              <ul>
+
+                <li>
+                  Developed audio classification models using CNN
+                  architectures and pretrained audio representations,
+                  including YAMNet and PANNs.
+                </li>
+
+                <li>
+                  Built audio preprocessing and augmentation pipelines
+                  using Librosa and Audiomentations.
+                </li>
+
+                <li>
+                  Compared multiple model architectures and evaluated
+                  accuracy, generalization, and deployment constraints.
+                </li>
+
+                <li>
+                  Investigated TensorFlow Lite compatibility and optimized
+                  the inference approach for resource-constrained
+                  environments.
+                </li>
+
+              </ul>
+
+              <p>
+                🔹 <strong>Focus:</strong>
+                Audio AI · Deep Learning · TensorFlow · Keras ·
+                Model Evaluation · Edge Inference
+              </p>
+
             </div>
 
-            <!-- Softplan -->
-            <div class="timeline-item">
-              <div class="timeline-date">07/2013 - 02/2020</div>
-              <div class="timeline-content">
-                <h3>Full Stack Developer (Python / Django) - Softplan</h3>
-                <ul>
-                  <li>Developed a Django-based web application for managing court processes (Python, Django, PostgreSQL), deployed on Heroku.</li>
-                  <li>Maintained legacy systems and contributed across the project lifecycle from design to deployment.</li>
-                </ul>
-                <p>🔹 Impact: Delivered scalable web applications improving legal operations and backend reliability.</p>
-              </div>
+          </div>
+
+          <!-- Angelina -->
+          <div class="timeline-item">
+
+            <div class="timeline-date">
+              01/2025 – 02/2025
             </div>
+
+          <div class="timeline-content">
+
+             <h3>
+              AI Engineer — NLP Project
+             </h3>
+
+             <p>
+               <strong>Angelina — Contract Project</strong>
+             </p>
+
+            <ul>
+
+              <li>
+                Developed a multi-class text classification pipeline using
+                <strong>BERT</strong> to analyze large volumes of noisy and unstructured
+                user feedback
+              </li>
+
+              <li>
+               Experimented with both <strong>BERT and RoBERTa</strong> during model
+               evaluation, with BERT selected for the final solution.
+              </li>
+
+              <li>
+                Fine-tuned the Transformer model to capture semantic information from
+                user feedback, addressing slang, spelling errors, noisy text, and
+                significant class imbalance.
+              </li>
+
+              <li>
+                Addressed common NLP challenges including slang, spelling errors,
+                noisy text, and significant class imbalance in user feedback.
+              </li>
+
+              <li>
+               Applied NLP techniques including <strong>Named Entity Recognition (NER)</strong>
+               to identify products and services associated with negative feedback.
+              </li>
+
+              <li>
+               Built data preparation and model training workflows using
+               Python, Pandas, NumPy, PyTorch, and Hugging Face Transformers.
+              </li>
+
+              <li>
+                 Developed a production-ready inference pipeline with FastAPI,
+                exposing REST endpoints for text classification and confidence
+                scores.
+              </li>
+
+              <li>
+                Containerized the inference service with Docker for deployment
+                in the client's environment.
+              </li>
+
+            </ul>
+
+            <p>
+              🔹 <strong>Focus:</strong>
+              NLP · Transformers · Text Classification · Sentiment Analysis ·
+              Embeddings · NER · PyTorch · Hugging Face · FastAPI · Docker
+             </p>
+
+          </div>
+
+          </div>
+
+
+          <!-- BrainInnov -->
+          <div class="timeline-item">
+
+            <div class="timeline-date">
+              05/2025 – 07/2025
+            </div>
+
+            <div class="timeline-content">
+
+              <h3>
+                Machine Learning Engineer Intern
+              </h3>
+
+              <p>
+                <strong>BrainInnov — Montréal, Canada</strong>
+              </p>
+
+              <ul>
+
+                <li>
+                  Developed 3D deep learning models for lung nodule
+                  classification using PyTorch and MONAI.
+                </li>
+
+                <li>
+                  Built preprocessing pipelines for 3D CT volumes using
+                  SimpleITK and MONAI.
+                </li>
+
+                <li>
+                  Experimented with ResNet, DenseNet, and attention-based
+                  architectures.
+                </li>
+
+                <li>
+                  Applied Grad-CAM to improve model interpretability and
+                  visual analysis of predictions.
+                </li>
+
+                <li>
+                  Evaluated models using accuracy, AUC, F1,
+                  precision, and recall.
+                </li>
+
+              </ul>
+
+              <p>
+                🔹 <strong>Result:</strong>
+                Achieved 87.5% accuracy and 0.91 AUC in the evaluated
+                lung nodule classification model.
+              </p>
+
+            </div>
+
+          </div>
+
+
+          <!-- Globant -->
+          <div class="timeline-item">
+
+            <div class="timeline-date">
+              03/2022 – 07/2023
+            </div>
+
+            <div class="timeline-content">
+
+              <h3>
+                Python Developer / Data Engineer
+              </h3>
+
+              <p>
+                <strong>Globant</strong>
+              </p>
+
+              <ul>
+
+                <li>
+                  Developed Python-based data processing and ETL workflows
+                  for enterprise projects.
+                </li>
+
+                <li>
+                  Processed large Excel datasets using Pandas and built
+                  pipelines for data transformation and validation.
+                </li>
+
+                <li>
+                  Worked with AWS Glue, Athena, and S3 for cloud-based
+                  data processing and analytics.
+                </li>
+
+                <li>
+                  Contributed to data workflows supporting analytics and
+                  machine learning use cases.
+                </li>
+
+              </ul>
+
+              <p>
+                🔹 <strong>Focus:</strong>
+                Python · Pandas · AWS · Glue · Athena · S3 · Data Engineering
+              </p>
+
+            </div>
+
+          </div>
+
+
+          <!-- Radix -->
+          <div class="timeline-item">
+
+            <div class="timeline-date">
+              12/2021 – 03/2022
+            </div>
+
+            <div class="timeline-content">
+
+              <h3>
+                Full Stack Developer
+              </h3>
+
+              <p>
+                <strong>Radix</strong>
+              </p>
+
+              <ul>
+
+                <li>
+                  Developed backend and web applications using Python,
+                  Flask, JavaScript, and jQuery.
+                </li>
+
+                <li>
+                  Built data transformation workflows using PySpark
+                  and Databricks.
+                </li>
+
+              </ul>
+
+              <p>
+                🔹 <strong>Focus:</strong>
+                Python · Flask · PySpark · Databricks · Web Development
+              </p>
+
+            </div>
+
+          </div>
+
+
+          <!-- Portal Telemedicina -->
+          <div class="timeline-item">
+
+            <div class="timeline-date">
+              12/2020 – 12/2021
+            </div>
+
+            <div class="timeline-content">
+
+              <h3>
+                AI Backend Developer
+              </h3>
+
+              <p>
+                <strong>Portal Telemedicina</strong>
+              </p>
+
+              <ul>
+
+                <li>
+                  Integrated AI diagnostic outputs into clinical systems
+                  using Python, Django, Docker, and Kubernetes.
+                </li>
+
+                <li>
+                  Developed REST APIs for AI-generated medical imaging
+                  outputs and heatmaps.
+                </li>
+
+                <li>
+                  Built backend services supporting AI-assisted
+                  telemedicine workflows.
+                </li>
+
+                <li>
+                  Worked with GCP services including BigQuery,
+                  Data Fusion, Cloud Storage, and Looker.
+                </li>
+
+              </ul>
+
+              <p>
+                🔹 <strong>Focus:</strong>
+                Healthcare AI · Python · Django · REST APIs · Docker ·
+                Kubernetes · GCP
+              </p>
+
+            </div>
+
+          </div>
+
+
+          <!-- Softplan -->
+          <div class="timeline-item">
+
+            <div class="timeline-date">
+              07/2013 – 02/2020
+            </div>
+
+            <div class="timeline-content">
+
+              <h3>
+                Full Stack Developer
+              </h3>
+
+              <p>
+                <strong>Softplan</strong>
+              </p>
+
+              <ul>
+
+                <li>
+                  Developed and maintained enterprise web applications
+                  using Python, Django, JavaScript, and PostgreSQL.
+                </li>
+
+                <li>
+                  Worked across the software development lifecycle,
+                  from requirements and implementation to deployment
+                  and maintenance.
+                </li>
+
+                <li>
+                  Built backend services and business workflows for
+                  legal technology applications.
+                </li>
+
+              </ul>
+
+              <p>
+                🔹 <strong>Focus:</strong>
+                Python · Django · PostgreSQL · JavaScript ·
+                Full Stack Development
+              </p>
+
+            </div>
+
+          </div>
+
+
         </div>
       </div>
 
+
+      <!-- Education -->
       <div class="timeline-column">
+
         <h2>Education</h2>
+
         <div class="timeline">
-            <div class="timeline-item">
-              <div class="timeline-date">09/2023 - 07/2025</div>
-              <div class="timeline-content">
-                <h3>AEC Machine Learning and  Artificial Intelligence</h3>
-                <p>College LaSalle</p>
-              </div>
+
+
+          <div class="timeline-item">
+
+            <div class="timeline-date">
+              09/2023 – 07/2025
             </div>
-            <div class="timeline-item">
-              <div class="timeline-date">01/2011 - 12/2011</div>
-              <div class="timeline-content">
-                <h3>MBA in Information Technology Governance</h3>
-                <p>University Center - ICESP</p>
-              </div>
+
+            <div class="timeline-content">
+
+              <h3>
+                AEC — Artificial Intelligence and Machine Learning
+              </h3>
+
+              <p>
+                <strong>Collège LaSalle Montréal</strong>
+              </p>
+
             </div>
-            <div class="timeline-item">
-              <div class="timeline-date">07/2007 - 12/2010</div>
-              <div class="timeline-content">
-                <h3>Degree in Data Processing Technician</h3>
-                <p>Union Education of Brasilia - UNEB</p>
-              </div>
+
+          </div>
+
+
+          <div class="timeline-item">
+
+            <div class="timeline-date">
+              01/2011 – 12/2011
             </div>
-        </div>  
+
+            <div class="timeline-content">
+
+              <h3>
+                Postgraduate Studies in IT Governance
+              </h3>
+
+              <p>
+                <strong>Faculdades Integradas Promove de Brasília</strong>
+              </p>
+
+            </div>
+
+          </div>
+
+
+          <div class="timeline-item">
+
+            <div class="timeline-date">
+              07/2007 – 12/2010
+            </div>
+
+            <div class="timeline-content">
+
+              <h3>
+                Technical Degree in Data Processing
+              </h3>
+
+              <p>
+                <strong>Instituto de Ciências Exatas</strong>
+              </p>
+
+            </div>
+
+          </div>
+
+
+        </div>
+
+      </div>
+
     </section>
+
 
     <!-- Achievements -->
     <section class="achievements">
-      <h2>Achievements</h2>
+
+      <h2>Highlights</h2>
+
       <ul>
-        <li>Presented AI projects at <strong>Toronto AI Congress 2019</strong>.</li>
-        <li>Built and deployed AI-powered cancer detection pipelines.</li>
-        <li>Strong results in <strong>TCF Canada</strong> (French proficiency test).</li>
-        <li>Created scalable ETL pipelines with Azure and Databricks.</li>
+
+        <li>
+          <strong>Production AI:</strong>
+          Experience building LLM-powered and agentic AI workflows
+          for real-world applications.
+        </li>
+
+        <li>
+          <strong>Generative AI:</strong>
+          Hands-on experience with LLMs, RAG, LangGraph,
+          tool-based workflows, and AI observability.
+        </li>
+
+        <li>
+          <strong>Machine Learning:</strong>
+          Experience across computer vision, medical imaging,
+          and audio classification.
+        </li>
+
+        <li>
+          <strong>Healthcare AI:</strong>
+          Experience developing AI-enabled clinical and
+          medical imaging systems.
+        </li>
+
+        <li>
+          <strong>Software Engineering:</strong>
+          More than a decade of experience building backend,
+          full-stack, and data-intensive applications.
+        </li>
+
       </ul>
+
     </section>
+
 
     <!-- Languages -->
     <section class="languages">
+
       <h2>Languages</h2>
-      <p>🇧🇷 Portuguese (Native) | 🇺🇸 English (Fluent) | 🇫🇷 French (Intermediate/Advanced)</p>
+
+      <p>
+        🇧🇷 Portuguese — Native |
+        🇺🇸 English — Fluent |
+        🇫🇷 French — Professional Working Proficiency
+      </p>
+
     </section>
+
   </main>
 
+
   <footer>
-    <p>© 2026 Viviane Alves de Oliveira. Built with HTML, CSS & JavaScript.</p>
+    <p>
+      © 2026 Viviane Alves de Oliveira.
+      Built with HTML, CSS & JavaScript.
+    </p>
   </footer>
 
+
   <script src="js/script.js"></script>
-  
+
 </body>
 </html>
