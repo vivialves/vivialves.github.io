@@ -33,9 +33,14 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // Mobile menu toggle
-document.getElementById("menu-toggle").addEventListener("click", () => {
-  document.querySelector(".nav").classList.toggle("active");
-});
+const menuToggle = document.getElementById("menu-toggle");
+const nav = document.querySelector(".nav");
+
+if (menuToggle && nav) {
+  menuToggle.addEventListener("click", () => {
+    nav.classList.toggle("active");
+  });
+}
 
 // Example dynamic behavior
 document.addEventListener("DOMContentLoaded", () => {

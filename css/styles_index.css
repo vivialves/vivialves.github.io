@@ -48,8 +48,21 @@ nav a.active {
 .hero h1 {
   margin: 0.5rem 0;
 }
+.hero h2 {
+  margin: 0.5rem 0 1rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
 .hero p {
-  color: #555;
+  max-width: 760px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-tech {
+  font-size: 0.95rem;
+  font-weight: 600;
 }
 
 /* Projects Grid */
@@ -173,13 +186,14 @@ nav a.active {
 
 .social-links a {
   text-decoration: none;
-  padding: 0.5rem 1rem;
+  padding: 0.6rem 1.1rem;
   border-radius: 8px;
   background: #333;
   color: white;
-  transition: background 0.3s ease;
+  transition: transform 0.2s ease, background 0.3s ease;
 }
 
 .social-links a:hover {
-  background: #ff00d0;
+  background: #bf4c88;
+  transform: translateY(-2px);
 }
