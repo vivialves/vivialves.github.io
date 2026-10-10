@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Viviane Alves | Ingénieure en IA | Projets</title>
+  <link rel="alternate" hreflang="en" href="https://vivialves.github.io/">
+  <link rel="alternate" hreflang="fr" href="https://vivialves.github.io/fr/">
+  <link rel="alternate" hreflang="x-default" href="https://vivialves.github.io/">
+  <link rel="shortcut icon" href="../assets/fl-icon.jpg">
+  <link rel="stylesheet" href="../css/styles_portfolio.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+  <!-- Header / Navbar -->
+  <header>
+    <nav class="nav">
+      <a href="index.html">Accueil</a>
+      <a href="about.html">À propos</a>
+      <a href="skills.html">Compétences</a>
+      <a href="portfolio.html" class="active">Projets</a>
+      <a href="contact.html">Contact</a>
+
+      <div class="language-switcher">
+        <a href="../portfolio.html">EN</a>
+        <span>|</span>
+        <a href="fr/portfolio.html" class="active">FR</a>
+      </div>
+
+    </nav>
+
+    <button id="menu-toggle" class="menu-toggle"></button>
+  </header>
+
+  <!-- ===== PORTFOLIO SECTION ===== -->
+  <section class="portfolio" id="portfolio">
+
+    <h2>Portfolio</h2>
+
+    <p class="subtitle">
+      Sélection de projets en intelligence artificielle couvrant l’IA générative,
+      l’apprentissage automatique, le NLP, l’IA en santé et les systèmes intelligents.
+    </p>
+
+    <!-- Filter Buttons -->
+    <div class="filter-buttons">
+      <button class="filter-btn" data-category="all">Tout</button>
+      <button class="filter-btn" data-category="genai">IA Générative</button>
+      <button class="filter-btn" data-category="ml">Machine Learning</button>
+      <button class="filter-btn" data-category="nlp">NLP</button>
+      <button class="filter-btn" data-category="healthcare">IA en Santé</button>
+    </div>
+
+    <div class="portfolio-grid">
+
+      <!-- ========================================================= -->
+      <!-- Project 1 - OpenSport -->
+      <!-- ========================================================= -->
+
+      <div class="portfolio-item genai">
+
+        <div class="content">
+
+          <h3>Agents IA en production et systèmes de raisonnement</h3>
+
+          <p>
+            Conception et mise en œuvre de pipelines d’agents IA et de raisonnement 
+            pour une plateforme d’intelligence sportive, combinant LLM, RAG, 
+            orchestration d’outils, recherche vectorielle, API de streaming et observabilité de production.
+          </p>
+
+          <div class="tags">
+            <span>LLMs</span>
+            <span>LangGraph</span>
+            <span>RAG</span>
+            <span>Python</span>
+            <span>GCP</span>
+            <span>BigQuery</span>
+            <span>Langfuse</span>
+          </div>
+
+          <p>
+            <strong>Expérience professionnelle</strong>
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <!-- ========================================================= -->
+      <!-- Project 2 - Angelina NLP -->
+      <!-- ========================================================= -->
+
+      <div class="portfolio-item nlp">
+
+        <div class="content">
+
+          <h3>Analyse des sentiments NLP avec BERT</h3>
+
+          <p>
+            Développé un pipeline NLP basé sur les Transformers avec BERT
+            afin d’analyser de grands volumes de commentaires utilisateurs
+            non structurés, tout en gérant l’argot, les fautes d’orthographe,
+            le déséquilibre des classes, la classification de sentiments
+            et l’extraction d’entités.
+          </p>
+
+          <div class="tags">
+            <span>Python</span>
+            <span>BERT</span>
+            <span>PyTorch</span>
+            <span>Hugging Face</span>
+            <span>NLP</span>
+            <span>NER</span>
+            <span>FastAPI</span>
+            <span>Docker</span>
+          </div>
+
+          <p>
+            <strong>Ingénieure en IA — Projet contractuel</strong>
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <!-- ========================================================= -->
+      <!-- Project 3 - LIDC -->
+      <!-- ========================================================= -->
+
+      <div class="portfolio-item ml healthcare">
+
+        <img
+          src="https://res.cloudinary.com/dyxq9qxn6/image/upload/v1756583586/Screenshot_2025-08-30_155249_v9lyad.png"
+          alt="Imagerie médicale 3D avec LIDC"
+        >
+
+        <div class="content">
+
+          <h3>Imagerie médicale 3D avec LIDC</h3>
+
+          <p>
+            Développé des pipelines de prétraitement et d’entraînement pour la
+            classification du cancer du poumon en 3D à l’aide de scans DICOM,
+            de MONAI et de PyTorch. Le projet a atteint une précision de
+            87,5 % et un score AUC de 0,91, avec Grad-CAM utilisé pour
+            l’interprétabilité du modèle.
+          </p>
+
+          <div class="tags">
+            <span>PyTorch</span>
+            <span>MONAI</span>
+            <span>3D CNN</span>
+            <span>DICOM</span>
+            <span>Grad-CAM</span>
+            <span>IA en santé</span>
+          </div>
+
+          <a
+            href="https://github.com/vivialves/lidc_ml"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Github
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <!-- ========================================================= -->
+      <!-- Project 4 - Audio AI -->
+      <!-- ========================================================= -->
+
+      <div class="portfolio-item ml">
+
+        <img
+          src="https://res.cloudinary.com/dyxq9qxn6/image/upload/v1768847916/TFDemo_tkxttt.png"
+          alt="Audio AI Sound Recognition"
+        >
+
+        <div class="content">
+
+          <h3>IA audio — Reconnaissance sonore environnementale</h3>
+
+          <p>
+            Comparaison de multiples architectures de deep learning pour la
+            classification des sons environnementaux et évaluation des
+            contraintes de déploiement pour l’inférence en périphérie,
+            utilisant finalement les embeddings YAMNet pour une solution
+            compatible avec TensorFlow Lite.
+          </p>
+
+          <div class="tags">
+            <span>Python</span>
+            <span>TensorFlow</span>
+            <span>YAMNet</span>
+            <span>IA audio</span>
+            <span>TFLite</span>
+            <span>Edge AI</span>
+          </div>
+
+          <a
+            href="https://github.com/vivialves/sound_recognition_yamnet"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Github
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <!-- ========================================================= -->
+      <!-- Project 5 - Breast Cancer -->
+      <!-- ========================================================= -->
+
+      <div class="portfolio-item ml healthcare">
+
+        <img
+          src="https://res.cloudinary.com/dyxq9qxn6/image/upload/v1756583309/Screenshot_2025-08-30_154655_nrmxsi.png"
+          alt="Breast Cancer AI Model"
+        >
+
+        <div class="content">
+
+          <h3>Classification du cancer du sein</h3>
+
+          <p>
+            Développé des modèles d'apprentissage profond, notamment DenseNet,
+            EfficientNet et VGG16, pour la classification d'images de cancer
+            du sein, en utilisant des cartes thermiques Grad-CAM pour améliorer
+            l'interprétabilité du modèle.
+          </p>
+
+          <div class="tags">
+            <span>Python</span>
+            <span>Keras</span>
+            <span>TensorFlow</span>
+            <span>CNN</span>
+            <span>Grad-CAM</span>
+            <span>IA en santé</span>
+          </div>
+
+          <p>
+            <a
+              href="https://classbreastcancer.streamlit.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Visit Site
+            </a>
+          </p>
+
+          <a
+            href="https://github.com/vivialves/breast_cancer_cnn"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Github
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <!-- ========================================================= -->
+      <!-- Project 6 - Market Analysis Agent -->
+      <!-- ========================================================= -->
+
+      <div class="portfolio-item genai">
+
+        <img
+          src="https://res.cloudinary.com/dyxq9qxn6/image/upload/v1756619850/Screenshot_2025-08-31_015715_zysivt.png"
+          alt="Market Analysis Agent"
+        >
+
+        <div class="content">
+
+          <h3>Agent d'analyse de marché</h3>
+
+          <p>
+            Développé un système multiagents pour l’analyse du commerce électronique
+            utilisant des LLM, l’analyse des sentiments, la collecte de données,
+            la détection de tendances et l’orchestration basée sur LangChain.
+          </p>
+
+          <div class="tags">
+            <span>Python</span>
+            <span>LangChain</span>
+            <span>LLMs</span>
+            <span>Agents IA</span>
+            <span>Pipeline de données</span>
+          </div>
+
+          <a
+            href="https://github.com/vivialves/market-analysis-agent"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Github
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 Viviane Alves de Oliveira. Créé avec HTML, CSS et JavaScript.</p>
+  </footer>
+
+
+  <script src="../js/script.js"></script>
+
+</body>
+</html>
