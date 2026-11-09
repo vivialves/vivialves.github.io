@@ -40,8 +40,8 @@ nav a.active {
 }
 
 .profile-img {
-  width: 150px;
-  height: 210px;
+  width: 140px;
+  height: 200px;
   border-radius: 50%;
   object-fit: cover;
 }
